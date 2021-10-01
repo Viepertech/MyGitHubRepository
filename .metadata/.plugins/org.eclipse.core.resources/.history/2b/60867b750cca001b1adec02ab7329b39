@@ -1,0 +1,24 @@
+//this program will take two int values input by the user and add the sum, printing the output.
+
+import java.util.Scanner;
+
+public class Summer2021 
+{
+	private static Scanner scan;
+
+	public static void main(String[] args)
+	{
+		int num1, num2;
+		scan = new Scanner(System.in);
+		
+		num1 = scan.nextInt();
+		num2 = scan.nextInt();
+		
+		int sum = num1 + num2;
+		
+		
+		System.out.println(sum);
+
+	}
+	
+}

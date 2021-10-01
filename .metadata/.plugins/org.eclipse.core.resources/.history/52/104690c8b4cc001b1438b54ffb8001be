@@ -1,0 +1,19 @@
+
+public class Test_1 {
+	public static void main(String[] args) 
+	{
+	int a, b, c, d, e, sum;
+	
+	a = 7;
+	b=4;
+	c=1;
+	d=6;
+	e=2;
+			
+			sum = ++b + a % c / d - e / b * d;
+			
+			System.out.println(sum);
+	
+	
+	}
+}

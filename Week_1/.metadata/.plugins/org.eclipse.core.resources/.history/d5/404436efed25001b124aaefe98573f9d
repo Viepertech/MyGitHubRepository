@@ -1,0 +1,22 @@
+public class Barrel {
+    private int marbles;
+
+    public void setMarbles(int marbles) {
+        this.marbles = marbles;
+    }
+
+    public int getMarbles() {
+        return marbles;
+    }
+
+    public void set(Barrel barrel){
+        this.marbles = barrel.getMarbles();
+    }
+
+    public Barrel add(Barrel barrel){
+        Barrel addBarrel = new Barrel();
+        addBarrel.setMarbles(this.marbles + barrel.getMarbles());
+        return addBarrel;
+    }
+    
+}

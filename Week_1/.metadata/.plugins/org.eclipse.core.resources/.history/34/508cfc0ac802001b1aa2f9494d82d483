@@ -1,0 +1,231 @@
+import java.text.NumberFormat;
+import java.util.ArrayList;
+public class Employee {
+private ArrayList<String> firstname,lastname;
+private ArrayList<Integer> dependent;
+private ArrayList<Float> rate,hrs,localTax,fedTax,stateTax,grossWages,currFedTax,currLocalTax,currStateTax,totalTax,totalDed,netPay;
+
+public Employee()
+{
+	firstname = new ArrayList<String>();
+	lastname = new ArrayList<String>();
+	dependent = new ArrayList<Integer>();
+	rate = new ArrayList<Float>();
+	hrs = new ArrayList<Float>();
+	localTax = new ArrayList<Float>();
+	fedTax = new ArrayList<Float>();
+	stateTax = new ArrayList<Float>();
+	grossWages = new ArrayList<Float>();
+	currLocalTax = new ArrayList<Float>();
+	currFedTax = new ArrayList<Float>();
+	currStateTax = new ArrayList<Float>();
+	totalTax = new ArrayList<Float>();
+	totalDed = new ArrayList<Float>();
+	netPay = new ArrayList<Float>();
+}
+public ArrayList<String> getFname() 
+{
+	return firstname;
+}
+
+public void setFname(ArrayList<String> firstname) 
+{
+	this.firstname = firstname;
+}
+public ArrayList<String> getLname() 
+{
+	return lastname;
+}
+public void setLname(ArrayList<String> lastname) 
+{
+	this.lastname = lastname;
+}
+public ArrayList<Integer> getDependent() 
+{
+	return dependent;
+}
+public void setDependent(ArrayList<Integer> dependent)
+{
+	this.dependent = dependent;
+}
+public ArrayList<Float> getHourly_rate()
+{
+	return rate;
+}
+public void setHourly_rate(ArrayList<Float> rate) 
+{
+	this.rate = rate;
+}
+public ArrayList<Float> getNo_of_hours() {
+return hrs;
+}
+public void setNo_of_hours(ArrayList<Float> hrs) 
+{
+	this.hrs = hrs;
+}
+public ArrayList<Float> getL_tax() {
+return localTax;
+}
+public void setL_tax(ArrayList<Float> localTax) 
+{
+	this.localTax = localTax;
+}
+public ArrayList<Float> getF_tax() 
+{
+	return fedTax;
+}
+public void setF_tax(ArrayList<Float> fedTax)
+{
+	this.fedTax = fedTax;
+}
+public ArrayList<Float> getS_tax() 
+{
+	return stateTax;
+}
+public void setS_tax(ArrayList<Float> stateTax) 
+{
+	this.stateTax = stateTax;
+}
+public ArrayList<Float> getG_wages()
+{
+	return grossWages;
+}
+public void setG_wages(ArrayList<Float> grossWages) 
+{
+	this.grossWages = grossWages;
+}
+public ArrayList<Float> getCf_tax() 
+{
+	return currFedTax;
+}
+public void setCf_tax(ArrayList<Float> currFedTax)
+{
+	this.currFedTax = currFedTax;
+}
+public ArrayList<Float> getCl_tax()
+{
+	return currLocalTax;
+}
+public void setCl_tax(ArrayList<Float> currLocalTax)
+{
+	this.currLocalTax = currLocalTax;
+}
+public ArrayList<Float> getCs_tax() 
+{
+	return currStateTax;
+}
+public void setCs_tax(ArrayList<Float> currStateTax) 
+{
+	this.currStateTax = currStateTax;
+}
+public ArrayList<Float> getT_tax() 
+{
+	return totalTax;
+}
+public void setT_tax(ArrayList<Float> totalTax)
+{
+	this.totalTax = totalTax;
+}
+public ArrayList<Float> getCt_tax() 
+{
+	return totalDed;
+}
+public void setCt_tax(ArrayList<Float> totalDed) 
+{
+	this.totalDed = totalDed;
+}
+public ArrayList<Float> getNet_pay() 
+{
+	return netPay;
+}
+public void setNet_pay(ArrayList<Float> netPay)
+{
+	this.netPay = netPay;
+}
+		public void readInput(String firstName2, String lastName2, int dependent2,
+				float rate2, float hrs2, float localTax2, float fedTax2, float stateTax2)
+		{
+			this.firstname.add(firstName2);
+			this.lastname.add(lastName2);
+			this.dependent.add(dependent2);
+			this.rate.add(rate2);
+			this.hrs.add(hrs2);
+			this.localTax.add(localTax2);
+			this.fedTax.add(fedTax2);
+			this.stateTax.add(stateTax2);
+		}
+  
+		public void writeOutput(int i)
+		{
+			NumberFormat formatter = NumberFormat.getCurrencyInstance();
+			System.out.println("Employee: " + firstname.get(i) + " " + lastname.get(i));
+			String moneyString = formatter.format(hrs.get(i));
+			String moneyString1 = formatter.format(rate.get(i));
+			System.out.println("Hours Worked: " + moneyString);
+			System.out.println("Hourly Rate: " + moneyString1);
+			moneyString = formatter.format(grossWages.get(i));
+			System.out.println("Gross Wages: " + moneyString);
+			System.out.println("Current Yr. To Date");
+			moneyString = formatter.format(currFedTax.get(i));
+			moneyString1 = formatter.format(fedTax.get(i));
+			System.out.println("Federal " + moneyString+ " " +moneyString1);
+			moneyString = formatter.format(currLocalTax.get(i));
+			moneyString1 = formatter.format(localTax.get(i));
+			System.out.println("Local " + moneyString + " " + moneyString1);
+			moneyString = formatter.format(totalDed.get(i));
+			System.out.println("Total Deductions " + moneyString);
+			moneyString = formatter.format(netPay.get(i));	
+			System.out.println("Net Pay " + moneyString);
+			moneyString = formatter.format(currStateTax.get(i));
+			moneyString1 = formatter.format(stateTax.get(i));
+			System.out.println("State " + moneyString+ " " + moneyString1);
+			System.out.println("\n\n");
+		}
+		
+		public void calculateData(int i)
+		{
+
+			float fedTax,g_pay,temp,annual_pay,tax_percent,localTax,temp2,stateTax,fedTax1,stateTax1,localTax1,totalTax;
+			g_pay = this.rate.get(i) * this.hrs.get(i);
+			temp = g_pay - (15 * this.dependent.get(i));
+			annual_pay = temp * 52;
+				if(annual_pay > 40000)
+					tax_percent = 0.3f;
+				else if(annual_pay > 20000 && annual_pay < 40000)
+					tax_percent = 0.2f;
+				else
+					tax_percent = 0.1f;
+				
+					fedTax = temp * tax_percent;
+					localTax = (float) (g_pay * 0.0115);
+					temp2 = this.localTax.get(i) + localTax;
+					
+					if(temp2 > 517.50
+							){
+						localTax = (float) (517.50 - this.localTax.get(i));
+					}
+
+					if(annual_pay > 30000)
+						tax_percent = 0.1f;
+					else
+						tax_percent = 0.05f;
+					
+					stateTax = temp * tax_percent;
+					fedTax1 = this.fedTax.get(i);
+					stateTax1 = this.stateTax.get(i);
+					localTax1 = this.localTax.get(i);
+					
+					this.grossWages.add(g_pay);
+					this.currFedTax.add(fedTax);
+					this.currLocalTax.add(localTax);
+					this.currStateTax.add(stateTax);
+					this.stateTax.add(stateTax);
+					this.fedTax.set(i, (fedTax + fedTax1));
+					this.stateTax.set(i, (stateTax + stateTax1));
+					this.localTax.set(i, (localTax + localTax1));
+					this.totalDed.add(fedTax + localTax + stateTax);
+					this.netPay.add(g_pay - (fedTax + localTax + stateTax));
+					totalTax = this.stateTax.get(i) + this.fedTax.get(i) + this.localTax.get(i);
+					this.totalTax.add(totalTax);
+		}
+}

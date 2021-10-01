@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Polynomial.java&apos; to &apos;Project_4_GUI_Finalized/src/(default package)&apos;&#x0D;&#x0A;- Original project: &apos;Project_4&apos;&#x0D;&#x0A;- Destination element: &apos;Project_4_GUI_Finalized/src/(default package)&apos;&#x0D;&#x0A;- Original element: &apos;Polynomial.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=Project_4_GUI_Finalized/src&lt;" element1="/src&lt;{Polynomial.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1606255652418" units="1" version="1.0"/>
+</session>

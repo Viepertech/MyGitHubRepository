@@ -1,0 +1,12 @@
+//Alexander RN Murphy
+/*
+2. Modify the previous program in such a way that when the number is 8, break from the block.
+This Program will answer Lab Question 2 for the Week:01 lab:Extra
+ */
+public class Lab_Question_2 
+{
+	public static void main(String[] args) 
+	{
+			
+	}
+}

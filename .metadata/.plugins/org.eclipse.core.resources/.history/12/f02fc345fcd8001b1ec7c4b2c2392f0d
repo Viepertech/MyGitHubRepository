@@ -1,0 +1,8 @@
+
+public class Son extends Myself
+{
+	public Son()
+	{
+		System.out.print("My Son");
+	}
+}

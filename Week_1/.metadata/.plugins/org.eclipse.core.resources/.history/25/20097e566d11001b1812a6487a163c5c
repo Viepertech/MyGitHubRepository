@@ -1,0 +1,21 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class ExampleGUI {
+	//*** Variables are created ***
+	//GUIs are made up of JPanels.  Panels are created//*** 
+	//here and named appropriately to describe what will//***
+	//be placed in each of them.
+	JPanel titlePanel = new JPanel();
+	JPanel questionPanel = new JPanel();
+	JPanel inputNumberPanel = new JPanel();
+	JPanel addAndSubtractButtonPanel = new JPanel();
+	JPanel answerPanel = new JPanel();
+	JPanel nextNumberPanel = new JPanel();
+	
+}

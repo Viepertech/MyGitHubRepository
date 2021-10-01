@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Temperature_Demo.java&apos; to &apos;Project_6_VacuumBarrel/src/(default package)&apos;&#x0D;&#x0A;- Original project: &apos;Temperature_Class_Project&apos;&#x0D;&#x0A;- Destination element: &apos;Project_6_VacuumBarrel/src/(default package)&apos;&#x0D;&#x0A;- Original element: &apos;Temperature_Demo.java&apos;" description="Copy compilation unit" destination="=Project_6_VacuumBarrel/src&lt;" element1="/src&lt;{Temperature_Demo.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1603822520026" units="1" version="1.0"/>
+</session>

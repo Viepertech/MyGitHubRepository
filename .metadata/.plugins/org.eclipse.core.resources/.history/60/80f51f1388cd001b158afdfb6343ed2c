@@ -1,0 +1,78 @@
+
+public class CovidPatient 
+{
+	
+	String firstName, lastName, id; 
+	static //Address.address;
+	int patients;
+	
+	public CovidPatient() {
+		
+	}
+	
+	
+	 public CovidPatient(String firstName, String lastName, String id, Address address) 
+	 {
+		// firstName = 
+		 
+		 
+		 
+		 
+	 
+	 }
+	 
+	 
+	 public String getFirstName() {
+		 return firstName;
+	 }
+	 
+	 public String getLastName() {
+		 return lastName;
+	 }
+	 
+	 public String getID() {
+		 return id;
+	 }
+	 
+	 public Address getAddress()
+	 {
+		 
+		 return getAddress();
+	 }
+	 
+	 public void setFirstName(String firstName) {
+		 this.firstName = firstName;
+	 }
+	 
+	 public void setLastName(String lastName) {
+		 this.lastName = lastName;
+	 }
+	 
+	 public void setId(String id) {
+		 this.id = id;
+	 }
+	 
+	 public void setAddress(Address address) {
+		 this.getAddress();
+	 }
+	 
+	 public static void reset() {
+		 patients = 0;
+	 }
+	 
+	 public static int getAdmittedPatients() {
+		 System.out.println(patients);
+	 }
+	 
+	 public String toString(){
+			System.out.print(
+					"First Name: " + getFirstName() + 
+					"; Last Name: " + getLastName() + 
+					"; ID: " + getID() + "; " + getAddress());
+				
+			return toString();
+		}
+	 
+	 
+	 
+}

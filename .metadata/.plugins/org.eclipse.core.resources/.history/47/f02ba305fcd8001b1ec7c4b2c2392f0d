@@ -1,0 +1,13 @@
+
+public class Myself  extends Parent
+{
+	public Myself()
+	{
+		System.out.println("Me ->");
+	}
+	
+	public void display() 
+	{
+		System.out.println("I am getting call from my children");
+	}
+}

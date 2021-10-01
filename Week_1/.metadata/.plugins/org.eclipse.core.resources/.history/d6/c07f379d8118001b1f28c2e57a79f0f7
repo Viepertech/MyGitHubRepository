@@ -1,0 +1,21 @@
+
+public class VacuumBarrel extends Barrel{
+
+	{
+		/**add(VacuumBarrel);
+		subtract(VacuumBarrel);
+		Divide(int);
+		equals(VacuumBarrel);
+		greaterThan(VacuumBarrel);
+		
+		toKelvin();
+		toFahrenheit();
+		toCelsius();
+		toString();
+		**/
+		
+		
+	}
+	
+	
+}

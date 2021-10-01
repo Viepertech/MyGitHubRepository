@@ -1,0 +1,59 @@
+
+public class CovidRegistry
+{
+	int capacity;
+	int patients;
+	
+	public CovidRegistry(int capacity) {
+		
+		return capacity;
+	}
+	
+	
+	public CovidPatient[] getCovidData() {
+		
+		return CovidPatient();
+	}
+	
+	public setCovidData (CovidPatient() covid data) {
+		this.CovidPatient() = CovidPatient();
+	}
+	
+	public int getCapacity() {
+		return capacity;
+	}
+	
+	public boolean addPatient(CovidPatient newData) {
+		CovidPatient();
+	}
+	//I am getting lost on this one...?
+	public CovidPatient removePatient(int i) 
+	{
+		if(i > capacity) {
+			return null;
+		}
+		CovidPatient patients = covidData[i];
+		CovidPatient IncrementalCounter[] = new CovidPatient[capacity];
+		
+		for(int j = 0; j < capacity; j++)
+		{
+			if(j==i) 
+			{
+				continue;
+			}
+			else 
+			{
+				IncrementalCounter[CovidPatient++] = getCovidData()[j];
+			}
+		}
+		
+		if(capacity >= i)
+		{
+			continue;
+		
+		}
+	}
+	
+	
+	
+}

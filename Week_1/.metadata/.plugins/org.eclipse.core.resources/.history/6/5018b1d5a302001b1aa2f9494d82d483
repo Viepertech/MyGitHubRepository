@@ -1,0 +1,40 @@
+import java.util.Scanner;
+public class Tax_Demo
+{
+static Scanner sc = new Scanner(System.in);
+public static void main(String[] args)
+{
+company testCompany = new company( );
+employee testEmployee = new employee();
+int count,dependent;
+String firstName,lastName;
+float hourlyRate,noOfHours,lTax,f_tax,s_tax;
+System.out.println("Enter number of employees:");
+int numberOfEmployees = sc.nextInt();
+for (count = 0; count < numberOfEmployees; count++)
+{
+System.out.println("Enter data for employee number " + count);
+System.out.println("First Name ");
+firstName = sc.next();
+System.out.println("Last Name ");
+lastName = sc.next();
+System.out.println("Number of dependents ");
+dependent = sc.nextInt();
+System.out.println("Hourly rate ");
+hourlyRate = sc.nextFloat();
+System.out.println("Number of hours worked ");
+noOfHours = sc.nextFloat();
+System.out.println("Local tax withheld to date ");
+lTax = sc.nextFloat();
+System.out.println("Federal tax withheld to date ");
+f_tax = sc.nextFloat();
+System.out.println("State tax withheld to date ");
+s_tax = sc.nextFloat();
+testEmployee.readInput(firstName,lastName,dependent,hourlyRate,noOfHours,lTax,f_tax,s_tax);
+testEmployee.calculateData(count);
+testEmployee.writeOutput(count);
+testCompany.collectData(testEmployee,count);
+}
+testCompany.printData();
+}
+}

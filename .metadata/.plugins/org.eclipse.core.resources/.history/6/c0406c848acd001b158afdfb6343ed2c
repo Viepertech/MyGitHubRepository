@@ -1,0 +1,60 @@
+
+public class CovidRegistry
+{
+	int capacity;
+	int patients;
+	
+	public CovidRegistry(int capacity) {
+		
+		return capacity;
+	}
+	
+	
+	public CovidPatient[] getCovidData() {
+		
+		return CovidPatient();
+	}
+	
+	public setCovidData (CovidPatient() covid data) {
+		this.CovidPatient() = CovidPatient();
+	}
+	
+	public int getCapacity() {
+		return capacity;
+	}
+	
+	public boolean addPatient(CovidPatient newData) {
+		CovidPatient();
+	}
+	//I am getting lost on this one...? I was checking on the textbook here but I just got lost mostly.
+	//I think an incremental loop is needed for how you worded the question, wasn't sure however.
+	public CovidPatient removePatient(int i) 
+	{
+		//if i is over capacity, remove it, getting out of my loop
+		if(i > capacity) {
+			return null;
+		}
+		
+		CovidPatient patients = getCovidData()[i];
+		CovidPatient IncrementalCounter[] = new CovidPatient[capacity];
+		//array
+		for(int j = 0; j < capacity; j++)
+		{
+			if(j==i) 
+			{
+				continue;
+			}
+			else 
+			{
+				IncrementalCounter[i++] = getCovidData()[j];
+			}
+		}
+		
+		if(capacity >= i)
+		{
+			continue;
+		
+		}
+	}
+	
+}

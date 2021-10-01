@@ -1,0 +1,15 @@
+
+public class ClassB extends ClassA
+{
+	protected int a;
+	int num1;
+	this.num = 0.
+	
+	int x =45;
+		public void display() {
+			int x = 15;
+			System.out.println(x);
+			System.out.println(this.x);
+			System.out.println(super.x);
+		}
+}

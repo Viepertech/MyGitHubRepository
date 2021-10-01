@@ -1,0 +1,15 @@
+//Alexander RN Murphy
+/*
+3. Replace the break with continue in the previous program.
+This program will answer question 3 for the Week:01 lab:Extra
+ * 
+ */
+
+
+public class Lab_Question_3 
+{
+	public static void main(String[] args) 
+	{
+			
+	}
+}

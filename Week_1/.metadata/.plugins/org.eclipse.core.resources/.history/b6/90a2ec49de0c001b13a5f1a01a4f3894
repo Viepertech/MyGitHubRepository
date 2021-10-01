@@ -1,0 +1,210 @@
+import java.text.DecimalFormat;
+
+public class clerk {
+	
+	static String firstName; 
+	static String lastName;
+	static int dependent;
+	static double hrs,localTax,federalTax,totalDeduction,stateTax,grossWages,weeklyWage,weeklyLocalTax,todayLocalTax,
+	currLocalTax,currFedTax,weeklyFedTax,todayFedTax,currStateTax,totalTax,netPay,weeklyStateTax,todayStateTax;
+	
+	static double totalDed;
+	static double hourlyRate;
+	static double noOfHours;
+
+	
+   private static DecimalFormat df2 = new DecimalFormat("#.##");
+   public int getDependent() {
+		return dependent;
+	}
+
+	public void setDependent(int dependent) {
+		this.dependent = dependent;
+	}
+
+	public double getHrs() {
+		return hrs;
+	}
+
+	public void setHrs(double hrs) {
+		this.hrs = hrs;
+	}
+	public double gettotalDeduction() {
+		return totalDeduction;
+	}
+
+	public void settotalDeduction(Double totalDeduction) {
+		this.totalDeduction= totalDeduction;
+	}
+	public double todayFedTax() {
+		return todayFedTax;
+	}
+
+	public void settodayFedTax(Double todayFedTax) {
+		this.todayFedTax= todayFedTax;
+	}
+	public double weeklyFedTax() {
+		return weeklyFedTax;
+	}
+
+	public void setweeklyFedTax(Double weeklyFedTax) {
+		this.weeklyFedTax= weeklyFedTax;
+	}
+
+	public double getLocalTax() {
+		return localTax;
+	}
+
+	public void setLocalTax(float localTax) {
+		this.localTax = localTax;
+	}
+
+	public double getFedTax() {
+		return federalTax;
+	}
+
+	public void setFedTax(double fedTax) {
+		this.federalTax = fedTax;
+	}
+
+	public double getStateTax() {
+		return stateTax;
+	}
+
+	public void setStateTax(double stateTax) {
+		this.stateTax = stateTax;
+	}
+
+	public double getGrossWages() {
+		return grossWages;
+	}
+	public double getWeeklyWage() {
+		return weeklyWage;
+	}
+	public void setGrossWages(double grossWages) {
+		this.grossWages = grossWages;
+	}
+
+	public double getCurrLocalTax() {
+		return currLocalTax;
+	}
+
+	public void setCurrLocalTax(double currLocalTax) {
+		this.currLocalTax = currLocalTax;
+	}
+
+	public double getCurrFedTax() {
+		return currFedTax;
+	}
+
+	public void setCurrFedTax(double currFedTax) {
+		this.currFedTax = currFedTax;
+	}
+
+	public double getCurrStateTax() {
+		return currStateTax;
+	}
+
+	public void setCurrStateTax(double currStateTax) {
+		this.currStateTax = currStateTax;
+	}
+
+	public double getTotalTax() {
+		return totalTax;
+	}
+
+	public void setTotalTax(double totalTax) {
+		this.totalTax = totalTax;
+	}
+
+	public double getTotalDed() {
+		return totalDed;
+	}
+
+	public void setTotalDed(double totalDed) {
+		this.totalDed = totalDed;
+	}
+
+	public double getNetPay() {
+		return netPay;
+	}
+
+	public void setNetPay(double netPay) {
+		this.netPay = netPay;
+	}
+
+	public double getHourlyRate() {
+		return hourlyRate;
+	}
+
+	public void setHourlyRate(double hourlyRate) {
+		this.hourlyRate = hourlyRate;
+	}
+
+	public double getNoOfHours() {
+		return noOfHours;
+	}
+
+	public void setNoOfHours(float noOfHours) {
+		this.noOfHours = noOfHours;
+	}
+
+	public double getlocalTax() {
+		return localTax;
+	}
+
+	public void setlocalTax(double localTax) {
+		this.localTax = localTax;
+	}
+
+	public double getfederalTax() {
+		return federalTax;
+	}
+
+	public void setfederalTax(double federalTax) {
+		this.federalTax = federalTax;
+	}
+
+	public double getstateTax() {
+		return stateTax;
+	}
+
+	public void setstateTax(double stateTax) {
+		this.stateTax = stateTax;
+	}
+	   
+	public double getweeklystateTax() {
+		return weeklyStateTax;
+	}
+
+	public void setweeklyStateTax(double weeklyStateTax) {
+		this.weeklyStateTax = weeklyStateTax;
+	}
+	public double gettodayStateTax() {
+		return todayStateTax;
+	}
+
+	public void settodayStateTax(double todayStateTax) {
+		this.todayStateTax = todayStateTax;
+	}
+	public double gettodayLocalTax() {
+		return todayLocalTax;
+	}
+
+	public void settodayLocalTax(double todayLocalTax) {
+		this.todayLocalTax = todayLocalTax;
+	}
+		public double getweeklyLocalTax() {
+			return weeklyLocalTax;
+		}
+
+		public void setweeklyLocalTax(double weeklyLocalTax) {
+			this.weeklyLocalTax = weeklyLocalTax;
+	}
+		
+		public void colectDataForEmployerReport(Employer temp, int count) {
+			
+		}
+
+   
+}

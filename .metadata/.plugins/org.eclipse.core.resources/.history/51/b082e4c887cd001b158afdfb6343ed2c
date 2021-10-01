@@ -1,0 +1,41 @@
+
+public class CovidPatient 
+{
+	
+	public CovidPatient() {
+		
+	}
+	
+	
+	 public CovidPatient(String firstName, String lastName, String id, Address address) 
+	 {
+		 
+		 
+		 
+		 
+		 
+	 }
+	 
+	 
+	 
+	 public String getFirstName() {
+		 return firstName;
+	 }
+	 
+	 public String getLastName() {
+		 return lastName;
+	 }
+	 
+	 public String getID() {
+		 return id;
+	 }
+	 
+	 public Address getAddress()
+	 {
+		 return Address;
+	 }
+	 
+	 
+	 
+	 
+}

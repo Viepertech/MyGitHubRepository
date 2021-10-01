@@ -1,0 +1,40 @@
+
+public class Test 
+{
+
+	int a;
+	
+	public float calc(float num) {
+		num*=10;
+		return num;
+	}
+	
+	public class SubClass extends SuperClass {
+		
+		float b;
+		public float calc(float num) {
+			num*=100;
+			return num;
+		}
+	}
+	
+	
+	
+	
+	
+	
+	public static void main(String[] args) 
+	{
+		SuperClass sup = new SuperClass();
+		System.out.println(sup.calc(2.0f));
+		
+		sup = new SubClass();
+		
+		System.out.println(sup.calc(4.0f));
+		
+		
+		
+	}
+	
+	
+}

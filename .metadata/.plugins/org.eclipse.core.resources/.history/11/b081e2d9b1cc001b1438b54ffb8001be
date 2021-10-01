@@ -1,0 +1,21 @@
+
+public class Test_1 {
+	public static void main(String[] args) 
+	{
+	int a, b, c, d, sum;
+	
+	a = 5;
+	b=2;
+	c=7;
+	d=4
+			
+			sum = ++a * b + c / d % b-- - c * d;
+	
+	System.out.println(sum);
+		
+		
+		
+		
+		
+	}
+}

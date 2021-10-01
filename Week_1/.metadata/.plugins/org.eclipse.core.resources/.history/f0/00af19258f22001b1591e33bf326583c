@@ -1,0 +1,26 @@
+
+public class TemperatureSVacuum {
+    private double degree;
+    private String scale;
+
+    public TemperatureSVacuum(double degree, String scale) {
+        this.degree = degree;
+        this.scale = scale;
+    }
+
+    public double getDegree() {
+        return degree;
+    }
+
+    public void setDegree(double degree) {
+        this.degree = degree;
+    }
+
+    public String getScale() {
+        return scale;
+    }
+
+    public void setScale(String scale) {
+        this.scale = scale;
+    }
+}

@@ -1,0 +1,27 @@
+
+public class OneEndContainer implements DataContainer
+{
+
+	String dataArray [];
+	//designating an int value called initialCapacity which has a default of 100 and is the intial storage capacity of the OneEndContainer (the size of the dataArray)
+	int initialCapacity = 100;
+	
+	public OneEndContainer() {
+		//a constructor which creates a container with the default initial capacity
+		new dataArray[initialCapacity] = 
+		return dataArray;
+	}
+	
+	public OneEndContainer(int capacity) {
+	// a constructor that creates a container with the default initial capacity	
+	}
+	
+	@Override 
+	public String toString() {
+		//returns the OneEndContainer elements in a specific format; 
+		//if the elements in the OneEndContainer with capacity 5 are Bill, Adam, Caroll toString() will return
+		//[Bill, Adam, Caroll]. If the data structure is empty, it returns []
+	}
+	
+	
+}

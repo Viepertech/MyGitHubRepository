@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class WorkerDemo {
+static Scanner scan = new Scanner(System.in)
+publicstaticvoid main(String[] args)
+{
+	Employee clerk = new Employer ();
+	Worker worker;
+	int count;
+	System.out.println("Enter number of Employees: ");
+	int numberOfWorkers = scan.nextInt();
+	
+	for (count = 1; count <= numberOfWorkers; count++) 
+	{
+		worker = new Worker ();
+		System.out.println("Enter data for worker number " + count);
+		worker.readInput();
+		worker.calculateData();
+		worker.writeOutput( );
+		clerk.colectDataFromEmployerReport (worker);
+		
+	}
+	clerk.printDataForEmployerReport();
+}
+}
